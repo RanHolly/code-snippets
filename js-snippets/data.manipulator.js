@@ -18,7 +18,7 @@
  * const dataManipulator = new DataManipulator(data1, data2, { end1: 'path.to.data' }); //only the first 2 fields are required.
  * const result = dataManipulator.build();
  */
-export class DataManipulator {
+class DataManipulator {
 
   /**
    * An instance of the DataManipulator class has been created.
@@ -267,3 +267,5 @@ export class DataManipulator {
     return this.result;
   }
 }
+
+module.exports = { DataManipulator };

@@ -4,17 +4,17 @@ import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from "typeorm"; //
 @Entity({ name: 'users' }) //name your database table.
 export class Users extends BaseEntity {
     @PrimaryGeneratedColumn()
-    id: number;
+    id!: number;
 
     @Column({ type: 'text' }) //if your database supports this type column
-    nickname: string;
+    nickname!: string;
 
-    @Column({ type: 'bigint' })
-    level: number;
+    @Column({ type: 'bigint', default: 0 }) //Will be set to default if you didn't specify anything when creating the table
+    level?: number;
 
-    @Column({ type: 'bigint' })
-    xp: number;
+    @Column({ type: 'bigint', default: 0 })
+    xp?: number;
 
-    @Column({ type: 'bigint' })
-    balance: number;
+    @Column({ type: 'bigint', default: 0 })
+    balance?: number;
 }
