@@ -14,6 +14,7 @@ import { Connect } from './connection';
 
 /**
  * Class for working with database data.
+ * @deprecated
  */
 export class Database {
     db: DataSource;

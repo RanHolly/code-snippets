@@ -1,1 +1,3 @@
+# info
+
 “Snippets” of ts/js code will be located here. Later I will expand this description ... maybe)

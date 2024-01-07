@@ -1,5 +1,7 @@
 # code-snippets
+
 This is a repository with some of my code snippets, ranging from simple utility functions like the one below to more complex code.
+
 ```javascript
 function time() {
   const date = new Date();

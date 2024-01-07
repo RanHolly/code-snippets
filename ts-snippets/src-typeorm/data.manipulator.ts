@@ -14,9 +14,12 @@
  * - Pay attention to your data sizes to avoid memory limit.
  *
  * Examples of using:
- * @example
- * const dataManipulator = new DataManipulator(data1, data2, { end1: 'path.to.data' }); //only the first 2 fields are required.
+ * ```js
+ * //only the first 2 fields are required.
+ * const dataManipulator = new DataManipulator(data1, data2, { end1: 'path.to.data' }); 
  * const result = dataManipulator.build();
+ * ```
+ * @deprecated This code has not been updated yet
  */
 export class DataManipulator {
     public readonly repoData: any;

@@ -5,9 +5,9 @@
     "outDir": "./dist",
     "strict": true,
     "sourceMap": true,
-    "sourceRoot": "./src",
-    "experimentalDecorators": true,
+    "sourceRoot": "./src-*",
+    "experimentalDecorators": true
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"],
+  "include": ["./src-*/**/*.ts", "../node_modules/@types"],
+  "exclude": ["../node_modules"]
 }

@@ -1,7 +1,7 @@
 //Database usage example
 
-import { Connect } from './typeorm/connection';
-import { Database } from './typeorm/';
+import { Connect } from "./database/connection";
+import { Database } from "./database/";
 
 //connect database. One call in the root file is enough ... well, or wherever you want)
 new Connect().connection();
