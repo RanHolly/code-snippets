@@ -1,12 +1,12 @@
 /** 
- * @typedef {import("discord.js").ChatInputCommandInteraction} ChatInputCommandInteraction 
+ * @typedef {import("discord.js").Interaction} Interaction 
  * @typedef {import("discord.js").InteractionResponse} InteractionResponse
  * @typedef {import("../../../client").BotClient} BotClient 
  */
 
 class SlashCommand {
   /**
-   * @param {ChatInputCommandInteraction} interaction 
+   * @param {Interaction} interaction 
    * @param {BotClient} client 
    */
   constructor(interaction, client) {
@@ -14,12 +14,13 @@ class SlashCommand {
   }
   /**
    * @private
-   * @param {ChatInputCommandInteraction} interaction 
+   * @param {Interaction} interaction 
    * @param {BotClient} client 
    * @returns {Promise<void | InteractionResponse>}
    */
   async build(interaction, client) {
     try {
+      if (!interaction.isCommand()) return;
       const slas_command = client.commands.get(interaction.commandName);
       const devId = ``;
       if (!slas_command) {
