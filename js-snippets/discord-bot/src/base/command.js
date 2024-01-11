@@ -63,8 +63,8 @@ class BaseCommand {
    *```
    */
   constructor({ name, description, option }) {
-    if (!name) throw new TypeError(`Вы не указали имя команды!`);
-    if (!option || Object.entries(option).length === 0) throw new TypeError(`Вы не указали параметры для команды!`);
+    if (!name) throw new TypeError(`You didn't specify a command name!`);
+    if (!option || Object.entries(option).length === 0) throw new TypeError(`You did not specify parameters for the command!`);
 
     this.name = name;
     this.data = new SlashCommandBuilder();
