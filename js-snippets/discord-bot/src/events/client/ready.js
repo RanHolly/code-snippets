@@ -3,7 +3,7 @@ const { BaseEvent } = require("../../base/events");
 
 const { applicationCommands } = Routes;
 
-export default class Ready extends BaseEvent {
+module.exports = class Ready extends BaseEvent {
   constructor() {
     super({ name: `ready` });
   }

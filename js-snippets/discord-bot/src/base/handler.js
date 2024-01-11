@@ -19,12 +19,12 @@ class BaseHandler {
   /** @param {BotClient} client */
   constructor(client) {
     this.client = client;
-    this.folderPath = [`srcJs`, `сommands`];
+    this.folderPath = [`src`, `сommand`];
     this.filterFile = /^[^.]+\.(js)$/;
   }
 
   /**
-   * Метод для изменения фильтра
+   * Method for changing the filter
    * @param {RegExp} filter
    * @returns {void}
    * @default /^[^.]+\.(js)$/
@@ -34,12 +34,13 @@ class BaseHandler {
   }
 
   /**
-   * Метод для изменения пути поиска
+   * Method for changing the search path
    * @param {ArrayPathLimit} path
-   * @default [`src`,`Command`]
+   * @default [`src`,`command`]
    */
   setFolderPath(path) {
     if (path) this.folderPath = path;
+    console.log(path);
   }
 
   /**
@@ -47,7 +48,7 @@ class BaseHandler {
    * @returns {void | null | Promise<void | null>}
    */
   setLogic(modules) {
-    throw new TypeError(`Вы не реализовали setLogic!`);
+    throw new TypeError(`You didn't implement setLogic!`);
   }
 
   /** @returns {Promise<void>} */

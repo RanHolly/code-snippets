@@ -5,7 +5,7 @@ class EventHandler extends BaseHandler {
   constructor(client) {
     super(client);
     this.client = client;
-    this.setFolderPath([`srcJs`, `events`]);
+    this.setFolderPath([`src`, `events`]);
     this.build();
   }
 

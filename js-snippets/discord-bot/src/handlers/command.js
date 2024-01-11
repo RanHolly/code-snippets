@@ -7,7 +7,7 @@ class CommandHandler extends BaseHandler {
     this.client = client;
     this.client.commands.clear();
 
-    this.setFolderPath([`srcJs`, `commands`]);
+    this.setFolderPath([`src`, `command`]);
     this.build();
   }
 

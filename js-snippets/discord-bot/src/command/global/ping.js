@@ -10,6 +10,7 @@ module.exports = class Ping extends BaseCommand {
    * @param {import("../../client").BotClient} client 
    */
   async execute(interaction, client) {
-    await interaction.reply({ content: `Pong: ${Math.round(client.ws.ping)} ms.` });
+    console.log(client.ws.ping);
+    await interaction.reply({ content: `Pong: ${Math.floor(client.ws.ping)} ms.` });
   }
 }

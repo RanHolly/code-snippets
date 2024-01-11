@@ -38,4 +38,4 @@ class SlashCommand {
   }
 }
 
-export { SlashCommand };
+module.exports = { SlashCommand };

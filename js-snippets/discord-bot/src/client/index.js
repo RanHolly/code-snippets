@@ -1,6 +1,7 @@
 const { Client, Collection, GatewayIntentBits } = require(`discord.js`);
 const { EventHandler } = require(`../handlers/event`);
 const { CommandHandler } = require(`../handlers/command`);
+require(`dotenv`).config();
 
 class BotClient extends Client {
   /** @type {Collection<string, string>} */
