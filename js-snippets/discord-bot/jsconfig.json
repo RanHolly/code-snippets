@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "useUnknownInCatchVariables": false, // catch (e: any). If true = e: never
+  },
+  "include": ["./src"]
+}
