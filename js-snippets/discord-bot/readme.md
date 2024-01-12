@@ -1,6 +1,7 @@
 # info
 
 Libraries: discord.js (v14), dotenv
+
 Optional (not required): eslint, eslint-plugin-jsdoc
 
 ## Additional Information
